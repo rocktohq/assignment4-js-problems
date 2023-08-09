@@ -1,4 +1,3 @@
-// Problem 1
 function cubeNumber(number) {
     if (typeof number !== "number") {
         return "Error: Please input a valid number!";
@@ -8,7 +7,7 @@ function cubeNumber(number) {
     return cube;
 }
 
-// Problem 2
+
 function matchFinder(string1, string2) {
 
     if (typeof string1 !== "string" || typeof string2 !== "string") {
@@ -22,19 +21,19 @@ function matchFinder(string1, string2) {
     }
 }
 
-// Problem 3
+
 function sortMaker(arr) {
     let newArr = [];
     let num1 = arr[0];
     let num2 = arr[1];
 
-    if (num1 === num2) {
-        return "equal";
-    }
-
     if (num1 < 0 || num2 < 0) {
         return "Invalid Input";
-    } else {
+    }
+    else if (num1 === num2) {
+        return "equal";
+    }
+    else {
         if (num1 < num2) {
             newArr.push(num2);
             newArr.push(num1);
@@ -42,10 +41,11 @@ function sortMaker(arr) {
             newArr = arr;
         }
     }
+
     return newArr;
 }
 
-// Problem 4
+
 function findAddress(obj) {
     const street = obj.street || "__";
     const house = obj.house || "__";
@@ -55,7 +55,7 @@ function findAddress(obj) {
     return address;
 }
 
-// Problem 5
+
 function canPay(changeArray, totalDue) {
     if (changeArray.length === 0) {
         return "Error: Array of khuchra taka can not be empty!";

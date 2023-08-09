@@ -7,13 +7,13 @@ function sortMaker(arr) {
     let num1 = arr[0];
     let num2 = arr[1];
 
-    if (num1 === num2) {
-        return "equal";
-    }
-
     if (num1 < 0 || num2 < 0) {
         return "Invalid Input";
-    } else {
+    }
+    else if (num1 === num2) {
+        return "equal";
+    }
+    else {
         if (num1 < num2) {
             newArr.push(num2);
             newArr.push(num1);
@@ -25,7 +25,7 @@ function sortMaker(arr) {
     return newArr;
 }
 
-const numbers = [-4, -2];
+const numbers = "[4, 8]";
 const result = sortMaker(numbers);
 
 console.log(result);
